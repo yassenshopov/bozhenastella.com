@@ -1,0 +1,35 @@
+.body {
+  background-color: #f5f5f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.zheni {
+  width: 45%;
+  padding-top: 100px;
+  padding-left: 20px;
+  color: #1f1e1e;
+  font-family:Quando,medium;
+  font-size:250%;
+  margin-left: 50px;
+}
+
+.mainbodybg {
+  height: auto;
+  position: absolute;
+  top:150px;
+  right: 100px;
+  padding-bottom:50px;
+}
+
+.aboutme_menu {
+  padding: 0 30px 0 30px;
+}
+
+.sub_h3 {
+  font-size: 57.5%;
+  font-family:roboto,bold;
+
+  line-height: 30px;
+}

@@ -1,0 +1,106 @@
+
+
+/*Dark Mode*/
+.body_dark {
+	background-color: #121212;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+    transition: background 0.2s linear;
+}
+
+.body {
+  background-color: #f5f5f0;
+}
+
+
+.label_dark {
+	background-color: #f5f5f0;
+	transition: background-color 0.2s linear;	
+	display: flex;
+	border-radius: 70px;
+	height: 35px;
+	width: 70px;
+	cursor: pointer;
+	align-items: center;
+} 
+
+.label {
+	background-color: #111;
+	transition: background-color 0.2s linear;
+	display: flex;
+	border-radius: 70px;
+	height: 35px;
+	width: 70px;
+	cursor: pointer;
+	align-items: center;
+
+}
+
+
+.checkbox {
+	opacity: 0;
+}
+
+.dark_mode {
+	display: flex;
+	position: relative;
+	margin-left: 88%;
+	margin-top: -3.8%;
+	justify-content: center;
+	align-items: center;
+	transition: background 0.2s linear;
+}
+
+.label .ball {
+	border-radius: 50%;
+	position: absolute;
+
+	height: 25px;
+	width: 25px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear,
+				background-color 0.2s linear;
+}
+
+
+.label_dark .ball_dark {
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: 38.25%;
+	height: 25px;
+	width: 25px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear,
+				background-color 0.2s linear;
+}
+
+.checkbox:checked + .label_dark .ball {
+	transform: translateX(135%);
+}
+
+.ball {
+
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: 38.25%;
+	height: 25px;
+	width: 25px;
+	transition: background-color 0.2s linear; 
+}
+
+.fa-moon-o {
+	color: #121212;
+	font-size: 135%;
+	margin-left: 15%;
+}
+
+.fa-sun-o {
+	color: #ffffff;
+	font-size: 135%;
+	margin-left: 17%;
+}
