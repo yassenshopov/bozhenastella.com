@@ -1,5 +1,6 @@
 /* Ripple effect */
 .ripple {
+  font-family: "Quando",cursive;
   border-radius: 25px;
   background-position: center;
   transition: background 0.45s ease-in;
