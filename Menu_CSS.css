@@ -7,13 +7,13 @@
 }
 /* Add a black background color to the top navigation */
 .topnav, .topnav_dark {
+  font-family: "Quando",cursive;
   padding-left: 50px;
   padding-top: 17px;
   overflow: hidden;
 }
 
 .topnav_dark a {
-  font-family: "Quando",cursive;
   position: relative;
   float: left;
   color: white;
