@@ -9,7 +9,7 @@
 /* Style all font awesome icons */
 .fa:not(.fa-moon-o,.fa-sun-o) {
   padding: 15px;
-  margin-right: 10%;
+  margin-right: 10px;
   font-size: 20px;
   border-radius: 50%;
   text-align: center;
