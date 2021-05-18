@@ -66,17 +66,13 @@
 
 /* Header/Blog Title */
 .header_sub {
+  background-image: url("antares.jpg");
   font-family: Quando, medium;
   font-size: 1.5em;
   width: 100%;
   text-align: center;
 }
 
-.antares {
-  left: 70px;
-  position: relative;
-  display: block; 
-}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
