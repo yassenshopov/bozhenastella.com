@@ -64,15 +64,10 @@
   }
 }
 
-body {
-  padding: 20px;
-  background: #f1f1f1;
-}
-
 /* Header/Blog Title */
 .header_sub {
   padding: 30px;
-  font-family: "Quando", cursive;
+  font-family: Quando, medium;
   font-size: 40px;
   text-align: center;
   background: white;
