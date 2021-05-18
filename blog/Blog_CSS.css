@@ -65,7 +65,6 @@
 }
 
 body {
-  font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
 }
@@ -73,6 +72,7 @@ body {
 /* Header/Blog Title */
 .header_sub {
   padding: 30px;
+  font-family: "Quando", cursive;
   font-size: 40px;
   text-align: center;
   background: white;
