@@ -67,9 +67,17 @@
 /* Header/Blog Title */
 .header_sub {
   font-family: Quando, medium;
-  font-size: 20%;
+  font-size: 1.5em;
   text-align: center;
   background: white;
+}
+
+.antares {
+  z-index: -1;
+  overflow: hidden;
+  left: 70px;
+  position: relative;
+  display: block; 
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -110,7 +118,7 @@
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
-    width: 90%;
+    width: 100%;
     padding: 0;
   }
 }
