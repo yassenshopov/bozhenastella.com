@@ -66,7 +66,6 @@
 
 /* Header/Blog Title */
 .header_sub {
-  padding: 30px;
   font-family: Quando, medium;
   font-size: 40px;
   text-align: center;
@@ -90,7 +89,7 @@
 /* Fake image */
 .fakeimg {
   background-color: red;
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
 }
 
