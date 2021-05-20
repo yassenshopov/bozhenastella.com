@@ -70,8 +70,8 @@
 }
 
 .change .bar2 {
-  -webkit-transition: scaleX(0);
-  transition: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
 }
 
 .change .bar3 {
