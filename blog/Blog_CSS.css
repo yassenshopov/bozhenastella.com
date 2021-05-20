@@ -84,7 +84,10 @@
     width: 100%;
     padding: 0;
   }
-  .hidden-mobile {
+  .topnav {
     display: none;
+  }
+  .mobile_menu {
+    display: inline;
   }
 }
