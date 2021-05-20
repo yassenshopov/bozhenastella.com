@@ -6,8 +6,6 @@
 
 
 
-
-
 /* Header/Blog Title */
 .header_sub {
   background-image: url("/antares.jpg");
@@ -54,7 +52,7 @@
 
 /*MOBILE MENU*/
 .mobile_menu {
-  display: inline-block;
+  display: none;
   cursor: pointer;
 }
 
@@ -88,6 +86,6 @@
     display: none;
   }
   .mobile_menu {
-    display: inline;
+    display: inline-block;
   }
 }
