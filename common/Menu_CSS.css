@@ -57,3 +57,12 @@
   width: 3.33%;
   height: 3.33%;
 }
+
+@media screen and (max-width: 800px) {
+  .topnav {
+    display: none;
+  }
+  .mobile_menu {
+    display: inline-block;
+  }
+}
