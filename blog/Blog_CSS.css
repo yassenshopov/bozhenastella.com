@@ -21,7 +21,7 @@
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
-  background-image: url("antares.jpg");
+  background-color: #f1f1f1;
   float: left;
   width: 75%;
 }
@@ -57,5 +57,8 @@
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
+  }
+  .hidden-mobile {
+    display: none;
   }
 }
