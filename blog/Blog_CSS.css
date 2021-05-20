@@ -55,7 +55,8 @@
   display: none;
   position: relative;
   cursor: pointer;
-  margin-left: 80%;
+  margin-top: 10px;
+  margin-left: 87%;
 }
 
 .bar1, .bar2, .bar3 {
