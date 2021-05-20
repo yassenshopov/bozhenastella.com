@@ -49,3 +49,11 @@
   background-color: #1f1e1e;
   color: white;
 }
+
+.logo {
+  position: relative;
+  float: left;
+  margin-right: 18px;
+  width: 3.33%;
+  height: 3.33%;
+}
