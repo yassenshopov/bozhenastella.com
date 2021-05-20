@@ -53,7 +53,9 @@
 /*MOBILE MENU*/
 .mobile_menu {
   display: none;
+  position: relative;
   cursor: pointer;
+  right:0;
 }
 
 .bar1, .bar2, .bar3 {
