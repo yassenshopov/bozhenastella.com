@@ -42,13 +42,13 @@ h3,h4,p {
 .leftcolumn {
   background-color: #f1f1f1;
   float: left;
-  width: 75%;
+  width: 50%;
 }
 
 /* Right column */
 .rightcolumn {
   float: right;
-  width: 25%;
+  width: 50%;
 }
 
 @media screen and (max-width: 800px) {
