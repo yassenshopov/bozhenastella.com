@@ -7,13 +7,14 @@
 
 }
 /* Add a black background color to the top navigation */
-.topnav, .topnav_dark {
+.topnav{
   font-family: "Quando",cursive;
   padding-left: 50px;
   padding-top: 17px;
   overflow: hidden;
 }
 
+/*
 .topnav_dark a {
   font-family: "Quando",cursive;
   position: relative;
@@ -25,6 +26,7 @@
   text-decoration: none;
   font-size: 18.5px;
 }
+*/
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -39,11 +41,12 @@
   font-size: 18.5px;
 }
 
-/* Change the color of links on hover */
+/* Change the color of links on hover 
 .topnav_dark a:hover {
   background-color: white;
   color: black;
 }
+*/
 
 .topnav a:hover {
   background-color: #1f1e1e;
@@ -51,24 +54,26 @@
 }
 
 .logo {
-  position: relative;
-  float: left;
-  margin-right: 18px;
-  width: 3.33%;
-  height: 3.33%;
+  width: 60px;
+  height: 60px;
+  top: -30px;
+
+  background-image: "url(../common/bozhena_logo1.png)";
+  display:inline-block;
 }
+
 /*MOBILE MENU*/
 .mobile_menu {
   display: none;
   position: relative;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 83%;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
-  height: 3px;
+  height: 4px;
   background-color: #1f1f21;
   margin: 6px 0;
   transition: 0.4s;
@@ -76,7 +81,7 @@
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 3px);
 }
 
 .change .bar2 {
@@ -90,11 +95,66 @@
 }
 
 
+
 @media screen and (max-width: 800px) {
-  .topnav {
+  .topnav, .logo {
     display: none;
   }
   .mobile_menu {
     display: inline-block;
+  }
+}
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  margin-top: 60px;   
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #f5f5f0; /* Black fallback color */
+  background-color: #f5f5f0; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  height: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  font-family: "Quando",cursive;
+  padding: 8px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #121212;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }

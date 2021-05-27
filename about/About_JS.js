@@ -1,3 +1,6 @@
+/*
+
+
 
 function dark() {
 	var bod = document.getElementById("body");
@@ -11,5 +14,21 @@ function dark() {
 	/*document.body.classList.toggle('body_dark');
 	document.label.classList.toggle('label_dark');
 	document.topnav.classList.toggle('topnav_dark');
-	*/
+	
+}
+
+*/
+
+
+var click = true;
+
+function animate_menu(x) {
+    x.classList.toggle("change");
+    click = !click;
+    if (click == false) {
+        document.getElementById("myNav").style.height = "100%";
+    } else {
+        document.getElementById("myNav").style.height = "0%";
+    }
+    
 }

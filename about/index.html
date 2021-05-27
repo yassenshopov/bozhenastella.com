@@ -13,24 +13,48 @@
 
  	<title>About me • Bozhena Varbanova</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="icon" type="image/png" href="/common/bozhena_logo1.png">
 	<link rel="stylesheet" href="About_CSS.css">
-	<link rel="stylesheet" href="/common/Menu_CSS.css">
- 	<link rel="stylesheet" href="/common/Footer_CSS.css">
+	<link rel="stylesheet" href="../common/Menu_CSS.css">
+ 	<link rel="stylesheet" href="../common/Footer_CSS.css">
    	<script type="text/javascript" src="About_JS.js"></script>
 
 </head>
 
-<body class="body_dark body" id="body">
+<body class="body" id="body">
 
-<div class="topnav_dark topnav mobile_menu" id="topnav">
-	<img style="width:100px;height:100px;" href=".." src="/common/bozhena_logo1.png" alt="Bozhena_Varbanova_Pianist_Composer_logo">
+
+<div class="topnav" id="topnav"">
+	<a class="logo">
 	<a class="ripple" href="..">🏡 Home</a>
 	<a class="ripple" href=".">👋 About me</a>
    	<a class="ripple" href="/blog">🧭 Blog</a>
 </div>
 
+<!--NEW: Mobile Overlay Menu-->
+<div id="myNav" class="overlay">
 
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="..">🏡 Home</a>
+    <a href=".">👋 About me</a>
+    <a href="../blog">🧭 Blog</a>
+  </div>
+
+</div>
+
+<!--Mobile Menu Section-->
+<div class="mobile_menu" onclick="animate_menu(this), openNav()">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+</div>
+
+
+<!--
 <div class="dark_mode">
     <input type="checkbox" onclick="dark()" class="checkbox" id="chk" />
     <label class="label_dark label" id="label" for="chk">
@@ -39,6 +63,7 @@
         <div class="ball_dark ball" id="ball"></div>
     </label>
 </div>
+-->
 
 <footer class="footer">
  	<a href="https://www.facebook.com/bozhena.stella" class="fa fa-facebook"></a>
