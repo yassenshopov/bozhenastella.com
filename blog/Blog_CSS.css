@@ -4,7 +4,9 @@
   flex-direction: column;
 }
 
-
+h3, h2, h1, p, h4, h5 {
+  font-family: Quando, medium;
+}
 
 /* Header/Blog Title */
 .header_sub {
@@ -32,7 +34,7 @@
 
 /* Fake image */
 .fakeimg {
-  background-color: red;
+  background-color: #1f1470;
   margin: 5px;
   padding: 5px;
 }
