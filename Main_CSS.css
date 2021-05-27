@@ -23,13 +23,36 @@
   padding-bottom:50px;
 }
 
-.aboutme_menu {
-  padding: 0 30px 0 30px;
-}
 
 .sub_h3 {
   font-size: 57.5%;
   font-family:roboto,bold;
 
   line-height: 30px;
+}
+
+/* Left column */
+.leftcolumn {
+  background-color: #f1f1f1;
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .topnav {
+    display: none;
+  }
+  .mobile_menu {
+    display: inline-block;
+  }
 }
