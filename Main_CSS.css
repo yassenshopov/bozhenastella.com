@@ -4,49 +4,52 @@
   flex-direction: column;
 }
 
-h1,h2 {
-  font-family:Quando,medium;
-}
-
-h3,h4,p {
-  font-family:roboto,bold;
-}
 
 .banner {
-  margin-top: 30vh;
-  position: absolute;
+  margin-top: 8%;
+  margin-left: 6%;
+  position: relative;
+  display: inline-block;
   width: 100%;
-  height: 100vh;
+  height: 220px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 
 .banner video {
 
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: static;
+  margin-top: 80px;
+  left: 10%;
   width: 100%;
-  height: 350px;
   object-fit: cover;
+  overflow: hidden;
 
 }
 
 .banner h2 {
-  position: absolute;
+  position: relative;
+  margin-left: -100%;
+  font-family: "Roboto";
   left: 0;
+  height: 152px;
+  top: 20px;
   width: 100%;
   background-color: #ffffff;
-  font-size: 10vw;
-  text-align: center;
+  font-size: 400%;
+  text-align: left;
   text-transform: uppercase;
   color: #121212;
-  line-height: 30vh;
+  line-height: 120%;
   mix-blend-mode: screen;
 
+}
+
+.caption {
+  margin: 6%;
+  font-family: "Open Sans";
+  font-size: 150%;
 }
 
 .zheni {
@@ -67,12 +70,6 @@ h3,h4,p {
 }
 
 
-.sub_h3 {
-  font-size: 57.5%;
-
-
-  line-height: 30px;
-}
 
 /* Left column */
 .leftcolumn {
