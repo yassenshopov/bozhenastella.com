@@ -89,6 +89,7 @@ html, body {
 }
 
 .bar1, .bar2, .bar3 {
+  border-radius: 5px;
   width: 35px;
   height: 4px;
   background-color: #1f1f21;
