@@ -1,5 +1,6 @@
 .body {
   background-color: #fafcff;
+  overflow-y: visible;
 }
 
 .navbar{
@@ -10,7 +11,7 @@
   height: 5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-family: "Quando", cursive;
+  font-family: "Domine", cursive;
 }
 
 .hero {
@@ -21,6 +22,7 @@
   
   */
   display: flex;
+  flex-direction: row;
   margin: auto;
   width: 95%;
   margin-bottom: 2rem;
@@ -29,42 +31,63 @@
 
 .hero_text {
   order: 1;
-  margin-right: 1rem;
+  width: 50%;
 }
 
 .headline {
 
   color: #db074d;
   display: inline-block;
-  margin: auto;
-  width: 90%;
-  height: 50%;
+  background-color: blue;
+  
+  
+  height: 40%;
 
   margin-bottom: 2rem;
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Domine', bold;
-  line-height: 8rem;
+  line-height: 300%;
 
 }
 
-.subheading {
+.headline h1 {
+  z-index: 1;
+  position: relative;
+}
 
+.headline video {
+  width: 60%;
+  height: 40%;
+  opacity: 10%;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+}
+
+.subheading {
 
   display: inline-block;
   margin: auto;
   width: 90%;
   color: #0a090a;
   font-family: 'Domine';
+  font-size: 90%;
 
 }
 
 .hero_image {
-  order: 2;
-  background-color: #f7eb05;
-  display: inline-block;
-  margin: auto;
-  width: 120%;
-  height: 40rem;
+  order: 0;
+  
+  background-image: url('main_body_bg2.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  
+  
+  width: 45%;
+  height: 45rem;
+  margin-right: 5%;
 
 }
 
@@ -75,7 +98,7 @@
 
   display: flex;
 
-  gap: 10%;
+  gap: auto;
 
   text-align: center;
   justify-content: center;
@@ -94,8 +117,10 @@
   padding: 20px;
   margin-right: 0;
   font-size: 30px;
-  border-radius: 0%;
-  width: 20%;
+  border-radius: 50%;
+  width: calc(25px + (30 - 25) * ((100vw - 300px) / (1600 - 300)));
+  height: calc(25px + (30 - 25) * ((100vw - 300px) / (1600 - 300)));
+
   text-align: center;
   text-decoration: none;
   transition: background 1s ease-in;
@@ -132,104 +157,154 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.banner {
-  margin-top: 8%;
-  margin-left: 6%;
+/*MOBILE MENU*/
+.mobile_menu {
+  display: none;
   position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  display: flex;
-
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 83%;
 }
 
-.banner video {
 
-  position: static;
-  margin-top: 80px;
-  left: 10%;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #1f1f21;
+  border-radius: 30%;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.banner h2 {
-  position: relative;
-  margin-left: -100%;
-  font-family: "Roboto";
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 3px);
+}
+
+.change .bar2 {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  margin-top: 60px;   
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
-  height: 152px;
-  top: 12%;
-  width: 100%;
-  background-color: #ffffff;
-  font-size: 375%;
-  text-align: left;
-  text-transform: uppercase;
+  top: 0;
+  background-color: #fafcff; /* Black fallback color */
+  background-color: #fafcff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  height: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  font-family: "Domine",bold;
+  padding: 8px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 36px;
   color: #121212;
-  line-height: 120%;
-  mix-blend-mode: screen;
-
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-.caption {
-  margin: 6%;
-  font-family: "Open Sans";
-  font-size: 150%;
-}
-
-.zheni {
-  width: 45%;
-  padding-top: 100px;
-  padding-left: 20px;
-  color: #1f1e1e;
-  font-size: 250%;
-  margin-left: 50px;
-}
-
-.mainbodybg {
-  height: auto;
-  position: absolute;
-  top:150px;
-  right: 100px;
-  padding-bottom:50px;
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
 }
 
 
 
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 50%;
-}
 
-/* Right column */
-.rightcolumn {
-  float: right;
-  width: 50%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
+  
+  .hero {
+    flex-direction: column;
+    width: 115%;
+
+    margin-left: -2.5%;
+    margin-right: -10%;
+  }
+
+
+
+  .hero_image {
+    height: 40rem;
+    
+    margin-right: 0;
+  }
+  
+  .headline video{
+    display: none;
+
+  }
+
+  .headline h1{
+    position: absolute;
+    top: 60%;
+    font-size: 260%;
+    color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .hero_image, .hero_text {
+    margin-top: 3vh;
     width: 100%;
     padding: 0;
   }
   .navbar {
+    width: 100%;
     display: none;
   }
   .mobile_menu {
     display: inline-block;
+    overflow-y: hidden;
   }
 }
