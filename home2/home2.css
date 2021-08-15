@@ -38,9 +38,10 @@
   display: inline-block;
   margin: auto;
   width: 90%;
-  height: 20rem;
+  height: 50%;
+
   margin-bottom: 2rem;
-  font-size: 3.4rem;
+  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Domine', bold;
   line-height: 8rem;
 
@@ -225,7 +226,7 @@
     width: 100%;
     padding: 0;
   }
-  .topnav {
+  .navbar {
     display: none;
   }
   .mobile_menu {
