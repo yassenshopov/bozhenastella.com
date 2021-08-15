@@ -41,7 +41,7 @@
   height: 50%;
 
   margin-bottom: 2rem;
-  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Domine', bold;
   line-height: 8rem;
 
