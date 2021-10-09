@@ -10,3 +10,11 @@ function animate_menu(x) {
     }
     
 }
+
+function playSound() {
+
+    var video = document.getElementById("video");
+  
+    video.muted = !video.muted;
+  
+  }
