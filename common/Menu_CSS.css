@@ -54,7 +54,7 @@ html, body {
 */
 
 /* Style the links inside the navigation bar */
-.topnav a:not(.logo_special) {
+.topnav a:not(.logo_special), .dropbtn, .dropdown-content {
 
   font-family: "Quando",cursive;
   position: relative;
@@ -168,12 +168,6 @@ html, body {
   color: #f1f1f1;
 }
 
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  overflow: visible;
-}
 
 .dropdown {
   z-index: 99;
