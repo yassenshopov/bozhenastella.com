@@ -55,7 +55,7 @@ html, body {
 */
 
 /* Style the links inside the navigation bar */
-.topnav a:not(.logo_special), .dropbtn, .dropdown-content {
+.topnav a:not(.logo_special), .dropbtn, .dropdown-content, .dropdown-content a {
 
   font-family: "Quando",cursive;
   position: relative;
@@ -75,7 +75,7 @@ html, body {
 }
 */
 
-.topnav a:not(.logo_special):hover, .dropbtn, .dropdown-content {
+.topnav a:not(.logo_special):hover, .dropbtn, .dropdown-content, .dropdown-content a {
   background-color: #1f1e1e;
   color: white;
 }
@@ -189,8 +189,6 @@ html, body {
 
 .dropdown-content a {
   z-index: 97;
-  
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
