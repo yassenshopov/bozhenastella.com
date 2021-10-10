@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+	<meta charset="utf-8">  
+	<meta name="description" content="Hello! My name is Bozhena Varbanova, a singer, pianist, and composer on her journey to conquer your hearts. This is my personal website where I showcase my original work, covers, and insights 🎶">
+	<meta name="keywords" content="Bozhena, Varbanova, Crochet, Writer, Plush, Toy, Shop">
+	<meta name="author" content="Yassen Shopov">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Plush Shop • Bozhena Varbanova </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ 	<link rel="icon" type="image/png" href="../common/bozhena_logo1.png">
+	<link href="../common/apple-touch-icon.png" rel="apple-touch-icon" />
+	<link rel="stylesheet" href="shop.css">
+	<link rel="stylesheet" href="../common/Footer_CSS.css">
+	<link rel="stylesheet" href="../common/Menu_CSS.css">
+	<script type="text/javascript" src="shop.js"></script>
+</head>
+
+
+
+
+<body class="body" id="body">
+
+<header>
+
+	<!--Menu Section-->
+
+	<a href=".."><img class="logo" src="../common/bozhena_logo1.png"></a>
+
+	<div class="topnav">
+		<a class="ripple" id="active" class="home_menu" href="..">🏡 Home</a>
+		<a class="ripple" href="../about">⭐️ About  me</a>
+		<div class="ripple dropdown">
+			<div class="dropbtn">✒️ Projects ▼</div>
+			<div class="dropdown-content">
+			  <a href="https://kofiscrib.com/tale-of-sequoyah">🎋 Tale of Sequoyah</a>
+			  <a href="https://www.etsy.com/uk/shop/StellaknitswonderS">🧸 Plush Shop</a>
+			</div>
+	  </div>
+	</div>
+
+
+
+
+	<!--Mobile Menu Section-->
+	<div class="mobile_menu" onclick="animate_menu(this), openNav()">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+
+
+
+
+	<!--NEW: Mobile Overlay Menu-->
+	<div id="myNav" class="overlay">
+
+	  <!-- Overlay content -->
+	  <div class="overlay-content">
+	    <a href="..">🏡 Home</a>
+	    <a href="../about">⭐️ About me</a>
+	    <a href="">✒️ Projects</a>
+	  </div>
+
+	</div>
+
+</header>
+
+
+
+
+
+<main>
+<!--Main Page body-->
+<div class="heroContainer">
+
+<div class="heroImg">
+	<img class="fadeInRight" src="shopPic.png" alt="Bozhena-Stella">
+</div>
+<div class="heroText fadeInRight">
+		
+		<h1>PLUSH SHOP</h1>
+		<h3>Hiya!</h3>
+		<h3>My name is Bozhena Stella and this is my happy place! Feel free to take a look and maybe, order your personal piece of happiness.</h3>
+		<h3> (｡･ω･｡)ﾉ♡</h3>
+	</div>
+
+</div>
+</div>
+
+<!--<div id="paypal-button"></div>-->
+<div id="break" style="height: 8px; background-color: #121212; margin-top: 40px;"></div>
+<div class="items">
+	<div class="item1">
+	<div class="item1Img"></div>
+	<div class="itemContainerText"><h1>Crochet flower froggy</h1></div>
+	</div>
+	<div class="item2"></div>
+	<div class="item3"></div>
+	<div class="item4"></div>
+	<div class="item5"></div>
+	<div class="item6"></div>
+</div>
+
+
+</main>
+
+<!--Footer Section-->
+
+<footer class="footer">
+ 	<a href="https://www.facebook.com/bozhena.stella" class="fa fa-facebook"></a>
+	<a href="https://www.instagram.com/stella.like.the.star/" class="fa fa-instagram"></a>
+	<a href="https://www.youtube.com/channel/UC5VWGQK_o1natZ6SriCHsBQ" class="fa fa-youtube"></a>
+	<a href="mailto:bozhenavarbanova@gmail.com" class="fa fa-envelope"></a>
+</footer>
+
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+	paypal.Button.render({
+	  // Configure environment
+	  env: 'sandbox',
+	  client: {
+		sandbox: 'demo_sandbox_client_id',
+		production: 'demo_production_client_id'
+	  },
+	  // Customize button (optional)
+	  locale: 'en_US',
+	  style: {
+		size: 'responsive',
+		color: 'black',
+		shape: 'rect',
+		label: 'pay',
+		tagline: 'false'
+	  },
+  
+	  // Enable Pay Now checkout flow (optional)
+	  commit: true,
+  
+	  // Set up a payment
+	  payment: function(data, actions) {
+		return actions.payment.create({
+		  transactions: [{
+			amount: {
+			  total: '0.01',
+			  currency: 'USD'
+			}
+		  }]
+		});
+	  },
+	  // Execute the payment
+	  onAuthorize: function(data, actions) {
+		return actions.payment.execute().then(function() {
+		  // Show a confirmation message to the buyer
+		  window.alert('Thank you for your purchase!');
+		});
+	  }
+	}, '#paypal-button');
+  
+  </script>
+  
+-->
+
+
+</body>
+
+</html>
