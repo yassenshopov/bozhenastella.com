@@ -1,3 +1,6 @@
+html {
+   scroll-behaviour: smooth;
+}
 
 html, body {
     max-width: 100%;
