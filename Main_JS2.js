@@ -24,6 +24,7 @@ function scrollFunc() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("header").className = "headerOnScroll";
+        document.getElementsByClassName("topnav").style.color = "#1f1e1e";
       } else {
         document.getElementById("header").className = "";
       }
