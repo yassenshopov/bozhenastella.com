@@ -1,6 +1,6 @@
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin-top: 32px;
   margin-left: 50px;
   float: left;
@@ -14,28 +14,35 @@
   transition: background 0.45s ease-in;
 }
 
+header {
+  transition: all 250ms;
+  position: fixed;
+  font-family: "Open Sans";
+  width: 100%;
+  height: 8rem;
+}
+
+.headerOnScroll {
+  background-color: #f4f6fc;
+}
 
 /* Add a black background color to the top navigation */
 .topnav{
-  position: fixed;
+
   padding-bottom: 32px;
   display:inline-block;
   margin-top: 50px;
-  font-family: "Quando",cursive;
+
   padding-left: 40px;
-  padding-top: -10px;
   overflow: hidden;
 }
 
 .topnav a:not(.logo_special), .dropbtn, .dropdown-content, .dropdown-content a {
-
-  font-family: "Quando",cursive;
   position: relative;
-  display:inline-block;
-  color: black;
+  display: inline-block;
   text-align: center;
   margin-right: 12px;
-  padding: 14px 16px;
+
   text-decoration: none;
   font-size: 18.5px;
 }
