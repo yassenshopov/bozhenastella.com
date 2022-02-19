@@ -1,0 +1,38 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: auto; 
+  background-color: #ffffff;
+  min-width: fit-content;
+
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+main {  
+  min-width: fit-content;
+  font-family: "Raleway";
+  background-color: #020301;
+  height: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav {
+    display: none;
+  }
+  .mobile_menu {
+    display: inline-block;
+  }
+  .heroText, .aboutText {
+    width: 100%;
+  }
+  .aboutText{
+    margin: 0;
+  }
+}
