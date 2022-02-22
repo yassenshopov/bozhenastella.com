@@ -31,11 +31,19 @@ header {
 }
 
 .topnavOnScrollUp {
-  color: #d7d8db;
+  color: #adaeb1;
 }
 
 .topnavOnScroll {
-  color: #1f1e1e;
+  color: #5c5861;
+}
+
+.topnavOnScroll:hover {
+  color: rgb(0, 0, 0);
+}
+
+.topnavOnScrollUp:hover {
+  color: rgb(255, 255, 255);
 }
 
 .topnav a:not(.logo_special), .dropbtn, .dropdown-content, .dropdown-content a {
@@ -51,9 +59,6 @@ header {
   transition: all 300ms;
 }
 
-.topnav a:not(.logo_special):hover {
-  color: rgb(148, 147, 150);
-}
 
 #lineSep {
   position: fixed;
