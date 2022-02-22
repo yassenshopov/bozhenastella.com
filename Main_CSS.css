@@ -20,11 +20,11 @@ body::-webkit-scrollbar {
 main {  
   min-width: fit-content;
   font-family: "Raleway";
-  background-color: #020301;
+  background-color: #eeeff1;
 }
 
 #hero {
-  height: 1000px;
+  height: fit-content;
   position: relative;
 }
 
@@ -46,7 +46,7 @@ main {
   font-family: "Montserrat";
   font-size: 60px;
   margin: auto;
-  left: calc(25% - 30px);
+  left: calc(40% - 240px);
   top: 300px;
 }
 
@@ -57,16 +57,59 @@ main {
   font-family: "Montserrat";
   font-size: 30px;
   margin: auto;
-  left: calc(25% + 130px);
+  left: calc(40% - 80px);
   top: 310px;
 }
 
+#writing {
+  height: 600px;
+  width: 100%;
+  background-color: #eeeff1;
+}
 
-@media screen and (max-width: 800px) {
-  .topnav {
-    display: none;
+@media screen and (max-width: 1007px) and (min-width: 641px){
+  #hero video {
+    margin-top: -200px;
+    width: 140%;
+    margin-left: -40%;
+    height: fit-content;
   }
-  .mobile_menu {
-    display: inline-block;
+  
+  #hero h1 {
+    font-size: 45px;
+    margin: auto;
+    left: calc(50% - 280px);
+    top: 250px;
+  }
+
+  #hero h2 {
+    font-size: 27px;
+    margin: auto;
+    left: calc(50% - 190px);
+    top: 270px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  
+  #hero video {
+    margin-top: -200px;
+    width: 220%;
+    margin-left: -40%;
+    height: fit-content;
+  }
+  
+  #hero h1 {
+    font-size: 35px;
+    margin: auto;
+    left: calc(50% - 220px);
+    top: 200px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+    margin: auto;
+    left: calc(50% - 160px);
+    top: 215px;
   }
 }

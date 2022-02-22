@@ -27,11 +27,17 @@ function scrollFunc() {
         document.getElementById("topnav1").className = "topnavOnScroll";
         document.getElementById("topnav2").className = "topnavOnScroll";
         document.getElementById("topnav3").className = "topnavOnScroll";
+        document.getElementById("bar1").style.backgroundColor = "#5c5861";
+        document.getElementById("bar2").style.backgroundColor = "#5c5861";
+        document.getElementById("bar3").style.backgroundColor = "#5c5861";
       } else {
         document.getElementById("header").className = "";
         document.getElementById("topnav1").className = "topnavOnScrollUp";
         document.getElementById("topnav2").className = "topnavOnScrollUp";
         document.getElementById("topnav3").className = "topnavOnScrollUp";
+        document.getElementById("bar1").style.backgroundColor = "#e1e1e4";
+        document.getElementById("bar2").style.backgroundColor = "#e1e1e4";
+        document.getElementById("bar3").style.backgroundColor = "#e1e1e4";
       }
 
 }

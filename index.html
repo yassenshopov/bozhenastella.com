@@ -31,7 +31,7 @@
         <div class="topnav">
             <a class="topnavOnScrollUp" href="." id="topnav1">HOME</a>
             <a class="topnavOnScrollUp" href="about" id="topnav2">ABOUT ME</a>
-            <a class="topnavOnScrollUp" href="projects" id="topnav3">PROJECTS</a>
+            <a class="topnavOnScrollUp" href="projects" id="topnav3">PROJECTS ▾</a>
             <!--
             <div class="ripple dropdown">
                 <button class="ripple dropbtn">✒️ PROJECTS ▼</button>
@@ -45,18 +45,18 @@
         
         <!--Mobile Menu Section-->
         <div class="mobile_menu" onclick="animate_menu(this), openNav()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div id="bar1" class="bar1"></div>
+            <div id="bar2" class="bar2"></div>
+            <div id="bar3" class="bar3"></div>
         </div>
 
         <!--NEW: Mobile Overlay Menu-->
         <div id="myNav" class="overlay">    
           <!-- Overlay content -->
           <div class="overlay-content">
-            <a href=".">🏡 Home</a>
-            <a href="about">⭐️ About me</a>
-            <a href="blog">✒️ Projects</a>
+            <a href=".">HOME</a>
+            <a href="about">ABOUT ME</a>
+            <a href="blog">PROJECTS ▾</a>
           </div>
     
         </div>
@@ -73,6 +73,10 @@
             <video id="video" poster="darkBG.jpeg" muted loop onclick="playSound()">
               <source src="bozhenastella_video.mp4" type="video/mp4" />
             </video>
+        </section>
+
+        <section id="writing">
+
         </section>
     </main>
 
