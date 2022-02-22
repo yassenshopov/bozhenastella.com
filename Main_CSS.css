@@ -1,38 +1,19 @@
-html{
-  scroll-behavior: smooth;
-}
-
-body {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: auto; 
-  background-color: #ffffff;
-  min-width: fit-content;
-
-  margin: 0;
-  padding: 0;
-}
-
-body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
-
 main {  
-  min-width: fit-content;
+  min-width: 100%;
   font-family: "Raleway";
   background-color: #eeeff1;
 }
 
 #hero {
-  height: fit-content;
   position: relative;
 }
 
 #hero video {
   margin-top: -120px;
-  width: 105%;
+  width: 100vw;
   filter: brightness(10%);
   transition: all 1000ms;
+
 }
 
 #hero video:hover {
@@ -40,24 +21,25 @@ main {
 }
 
 #hero h1 {
+  text-align: center;
   z-index: 2;
   position: relative;
   color: #d7d8db;
   font-family: "Montserrat";
   font-size: 60px;
   margin: auto;
-  left: calc(40% - 240px);
+
   top: 300px;
 }
 
 #hero h2 {
+  text-align: center;
   z-index: 2;
   position: relative;
   color: #d7d8db;
   font-family: "Montserrat";
   font-size: 30px;
   margin: auto;
-  left: calc(40% - 80px);
   top: 310px;
 }
 
@@ -78,38 +60,70 @@ main {
   #hero h1 {
     font-size: 45px;
     margin: auto;
-    left: calc(50% - 280px);
     top: 250px;
   }
 
   #hero h2 {
     font-size: 27px;
     margin: auto;
-    left: calc(50% - 190px);
     top: 270px;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) and (min-width: 389px) {
   
   #hero video {
-    margin-top: -200px;
-    width: 220%;
-    margin-left: -40%;
-    height: fit-content;
+    margin-top: -30vh;
+    width: fit-content;
+    margin-left: -60%;
+    height: 100vh;
   }
   
   #hero h1 {
-    font-size: 35px;
+    font-size: 2rem;
     margin: auto;
-    left: calc(50% - 220px);
     top: 200px;
+    overflow: hidden;
   }
 
   #hero h2 {
-    font-size: 22px;
+    font-size: 1.3rem;
     margin: auto;
-    left: calc(50% - 160px);
     top: 215px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  #hero {
+    height: fit-content;
+  }
+  
+  #hero video {
+    margin-top: -30vh;
+    width: fit-content;
+    margin-left: -60%;
+    height: 100vh;
+
+  }
+  
+  #hero h1 {
+    font-size: 1.6rem;
+    margin: auto;
+    text-align: center;
+    left: calc(0%);
+    overflow: hidden;
+    justify-content: center;
+    margin-top: -10vh;
+  }
+
+  #hero h2 {
+    font-size: 1.1rem;
+    margin: auto;
+    left: calc(0%);
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
   }
 }
