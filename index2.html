@@ -15,6 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
  	<link rel="icon" type="image/png" href="common/bozhena_logo1.png">
 	<link href="common/apple-touch-icon.png" rel="apple-touch-icon" />
 	<link rel="stylesheet" href="Main_CSS2.css">
@@ -23,7 +24,7 @@
 	<script type="text/javascript" src="Main_JS2.js"></script>
 </head>
 
-<body>
+<body onload="playVideo()">
     <header id="header">
         <a href=".."><img class="logo" src="../common/bozhena_logo1.png"></a>
 
@@ -66,7 +67,12 @@
 
     <main>
         <section id="hero">
-            
+            <h1>BOZHENA VARBANOVA</h1>
+            <h2>SINGER • PIANIST • WRITER</h2>
+            <div id="darken"></div>
+            <video id="video" poster="darkBG.jpeg" muted loop onclick="playSound()">
+              <source src="bozhenastella_video.mp4" type="video/mp4" />
+            </video>
         </section>
     </main>
 

@@ -7,7 +7,7 @@
 }
 
 header {
-  z-index: 2;
+  z-index: 10;
   transition: all 250ms;
   position: fixed;
   font-family: "Open Sans";

@@ -35,3 +35,10 @@ function scrollFunc() {
       }
 
 }
+
+function playVideo() {
+    setTimeout(
+        function() {
+            document.getElementById("video").play();
+        }, 1000);
+}
