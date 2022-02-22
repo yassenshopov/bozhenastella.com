@@ -24,9 +24,14 @@ function scrollFunc() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("header").className = "headerOnScroll";
-        document.getElementsByClassName("topnav").style.color = "#1f1e1e";
+        document.getElementById("topnav1").className = "topnavOnScroll";
+        document.getElementById("topnav2").className = "topnavOnScroll";
+        document.getElementById("topnav3").className = "topnavOnScroll";
       } else {
         document.getElementById("header").className = "";
+        document.getElementById("topnav1").className = "topnavOnScrollUp";
+        document.getElementById("topnav2").className = "topnavOnScrollUp";
+        document.getElementById("topnav3").className = "topnavOnScrollUp";
       }
 
 }
