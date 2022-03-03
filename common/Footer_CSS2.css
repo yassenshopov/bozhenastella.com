@@ -1,13 +1,16 @@
 
 footer {
   text-align: center;
-  height: 200px;
+  height: 150px;
   background-color: #252425;
 }
 
 footer p {
+  padding-top: 70px;
+  padding-left: 2%;
   text-align: left;
   font-family: "Open Sans";
+  font-size: 14px;
   color: #eeeff1;
   text-decoration: none;
 }
