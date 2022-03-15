@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 main {  
   min-width: 100%;
   font-family: "Raleway";
@@ -11,7 +16,7 @@ main {
 #hero video {
   margin-top: -120px;
   width: 100vw;
-  filter: brightness(10%);
+  filter: brightness(20%);
   transition: all 1000ms;
 
 }
