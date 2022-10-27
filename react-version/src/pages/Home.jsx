@@ -20,12 +20,15 @@ function Home() {
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"></link>
             </Helmet>
             
-            {/* <h1>This is the homepage!</h1> */}
             <video autoPlay muted loop id="video">
                 <source src="/images/video.mp4" type="video/mp4" />
             </video>
+            <h1>Bozhena Varbanova</h1>
+            <h2>Composer - Linguist - Writer</h2>
+
         </main>
     );
 }
