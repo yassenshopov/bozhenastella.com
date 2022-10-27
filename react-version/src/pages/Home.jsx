@@ -7,7 +7,7 @@ function Home() {
     let image = ""
     
     return (
-        <div>
+        <main>
             <Helmet>
                 <meta name="author" content="Bozhena Varbanova" />
                 <title>{title}</title>
@@ -21,8 +21,12 @@ function Home() {
                 <meta property="twitter:description" content={description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>
-            <h1>this is the homepage</h1>
-        </div>
+            
+            {/* <h1>This is the homepage!</h1> */}
+            <video autoPlay muted loop id="video">
+                <source src="/images/video.mp4" type="video/mp4" />
+            </video>
+        </main>
     );
 }
 
